@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "nome": "Torino clássico",
+    "descricao": "Blend 160 g na chapa, queijo prato derretido, alface americana, tomate e molho da casa no brioche tostado.",
+    "ingredientes": [
+      "pão brioche selado na manteiga",
+      "blend bovino 160 g",
+      "queijo prato",
+      "alface americana",
+      "tomate",
+      "molho da casa"
+    ],
+    "preco": 29.9,
+    "categoria": "Hambúrgueres",
+    "imagem": "assets/img/produtos/classico.svg",
+    "ativo": true,
+    "maisPedido": true
+  },
+  {
+    "id": 2,
+    "nome": "Brasa dupla",
+    "descricao": "Dois blends de 120 g, cheddar cremoso, cebola caramelizada na cerveja escura e bacon crocante.",
+    "ingredientes": [
+      "pão brioche",
+      "2 blends bovinos 120 g",
+      "queijo cheddar",
+      "cebola caramelizada",
+      "bacon crocante"
+    ],
+    "preco": 38.5,
+    "categoria": "Hambúrgueres",
+    "imagem": "assets/img/produtos/brasa-dupla.svg",
+    "ativo": true,
+    "maisPedido": true
+  },
+  {
+    "id": 3,
+    "nome": "Smash mostarda da casa",
+    "descricao": "Dois smash burgers com crosta bem passada, queijo americano, picles de pepino e mostarda artesanal.",
+    "ingredientes": [
+      "pão de batata",
+      "2 smash burgers 90 g",
+      "queijo americano",
+      "picles de pepino",
+      "cebola roxa",
+      "mostarda artesanal Torino"
+    ],
+    "preco": 33.9,
+    "categoria": "Hambúrgueres",
+    "imagem": "assets/img/produtos/smash-mostarda.svg",
+    "ativo": true,
+    "maisPedido": false
+  },
+  {
+    "id": 4,
+    "nome": "Frango crocante na chapa",
+    "descricao": "Sobrecoxa empanada na farinha panko, maionese de limão-siciliano, repolho roxo e picles.",
+    "ingredientes": [
+      "pão brioche",
+      "sobrecoxa crocante 150 g",
+      "maionese de limão-siciliano",
+      "repolho roxo fatiado",
+      "picles"
+    ],
+    "preco": 31.0,
+    "categoria": "Hambúrgueres",
+    "imagem": "assets/img/produtos/frango-crocante.svg",
+    "ativo": true,
+    "maisPedido": false
+  },
+  {
+    "id": 5,
+    "nome": "Cogumelo na brasa (veg)",
+    "descricao": "Hambúrguer de grão-de-bico e cogumelos salteados, queijo meia-cura, rúcula e pesto de manjericão.",
+    "ingredientes": [
+      "pão australiano",
+      "burger de cogumelos e grão-de-bico 150 g",
+      "queijo meia-cura",
+      "rúcula fresca",
+      "pesto de manjericão"
+    ],
+    "preco": 32.5,
+    "categoria": "Hambúrgueres",
+    "imagem": "assets/img/produtos/veg-grelhado.svg",
+    "ativo": false,
+    "maisPedido": false
+  },
+  {
+    "id": 6,
+    "nome": "Batata rústica",
+    "descricao": "Porção generosa cortada com casca, finalizada com páprica defumada, alecrim e maionese da casa.",
+    "ingredientes": [
+      "batata asterix com casca",
+      "páprica defumada",
+      "alecrim fresco",
+      "sal grosso moído",
+      "maionese da casa à parte"
+    ],
+    "preco": 18.0,
+    "categoria": "Acompanhamentos",
+    "imagem": "assets/img/produtos/batata.svg",
+    "ativo": true,
+    "maisPedido": true
+  },
+  {
+    "id": 7,
+    "nome": "Anéis de cebola",
+    "descricao": "Anéis dourados e crocantes acompanhados de molho barbecue defumado da Torino.",
+    "ingredientes": [
+      "cebola doce em anéis",
+      "empanamento crocante",
+      "molho barbecue defumado"
+    ],
+    "preco": 21.5,
+    "categoria": "Acompanhamentos",
+    "imagem": "assets/img/produtos/onion-rings.svg",
+    "ativo": true,
+    "maisPedido": false
+  },
+  {
+    "id": 8,
+    "nome": "Refrigerante lata 350 ml",
+    "descricao": "Bem gelado para acompanhar a chapa. Escolha cola tradicional ou guaraná nas observações.",
+    "ingredientes": [
+      "refrigerante 350 ml gelado"
+    ],
+    "preco": 7.5,
+    "categoria": "Bebidas",
+    "imagem": "assets/img/produtos/refrigerante.svg",
+    "ativo": true,
+    "maisPedido": false
+  },
+  {
+    "id": 9,
+    "nome": "Limonada da casa 400 ml",
+    "descricao": "Suco fresco de limão-tahiti batido com hortelã e toque leve de gengibre.",
+    "ingredientes": [
+      "limão-tahiti",
+      "folhas de hortelã",
+      "gengibre fresco",
+      "açúcar demerara",
+      "gelo"
+    ],
+    "preco": 12.9,
+    "categoria": "Bebidas",
+    "imagem": "assets/img/produtos/limonada.svg",
+    "ativo": true,
+    "maisPedido": false
+  },
+  {
+    "id": 10,
+    "nome": "Brownie quente com calda",
+    "descricao": "Brownie denso de chocolate meio amargo 55% finalizado com calda quente de caramelo salgado.",
+    "ingredientes": [
+      "chocolate meio amargo 55%",
+      "manteiga",
+      "nozes picadas",
+      "calda de caramelo salgado"
+    ],
+    "preco": 16.5,
+    "categoria": "Sobremesas",
+    "imagem": "assets/img/produtos/brownie.svg",
+    "ativo": true,
+    "maisPedido": false
+  }
+]

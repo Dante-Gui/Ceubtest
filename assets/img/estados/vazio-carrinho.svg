@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 140" role="img" aria-label="Comanda vazia">
+  <path d="M46 18h88v98l-11-7-11 7-11-7-11 7-11-7-11 7-11-7-11 7V18z" fill="#FFFFFF" stroke="#1F1A17" stroke-width="3"/>
+  <rect x="64" y="34" width="52" height="8" rx="4" fill="#F4B223"/>
+  <path d="M62 58h56M62 74h42M62 90h32" stroke="#D5CEC6" stroke-width="4" stroke-linecap="round"/>
+</svg>

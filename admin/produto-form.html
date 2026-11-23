@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de produto — Torino Admin</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+  <a href="#conteudo-principal" class="pular-conteudo">Ir para o formulário do produto</a>
+  <div class="admin-shell">
+    <header id="admin-barra-mobile"></header>
+    <aside id="admin-sidebar"></aside>
+
+    <main id="conteudo-principal" class="admin-conteudo">
+      <a href="produtos.html" class="voltar-link">
+        <svg class="icone icone-sm" aria-hidden="true"><use href="../assets/icons/sprite.svg#icone-seta-voltar"></use></svg>
+        <span>Voltar para produtos</span>
+      </a>
+
+      <div class="admin-cabecalho">
+        <h1 id="titulo-form-produto">Novo produto</h1>
+      </div>
+
+      <div class="admin-form-grade">
+        <section class="cartao-superficie" aria-labelledby="titulo-form-produto">
+          <div id="resumo-produto-form"></div>
+
+          <form id="form-produto" novalidate style="display: flex; flex-direction: column; gap: 16px;">
+            <div class="campo">
+              <label for="nome" class="campo-rotulo">Nome do produto</label>
+              <input type="text" id="nome" name="nome" class="campo-entrada" placeholder="Ex.: Torino clássico" required>
+            </div>
+
+            <div class="campo-linha campo-linha-2">
+              <div class="campo">
+                <label for="categoria" class="campo-rotulo">Categoria</label>
+                <select id="categoria" name="categoria" class="campo-entrada" required></select>
+              </div>
+              <div class="campo">
+                <label for="preco" class="campo-rotulo">Preço (R$)</label>
+                <input type="text" id="preco" name="preco" class="campo-entrada" inputmode="decimal" placeholder="29,90" required>
+              </div>
+            </div>
+
+            <div class="campo">
+              <label for="descricao" class="campo-rotulo">Descrição curta</label>
+              <textarea id="descricao" name="descricao" class="campo-entrada" placeholder="Descreva o ponto alto do prato em até 2 linhas." required></textarea>
+            </div>
+
+            <div class="campo">
+              <label for="ingredientes" class="campo-rotulo">Ingredientes <span class="campo-opcional">(separe por vírgula)</span></label>
+              <input type="text" id="ingredientes" name="ingredientes" class="campo-entrada" placeholder="pão brioche, blend 160 g, queijo prato, molho da casa">
+            </div>
+
+            <div class="campo-linha campo-linha-2">
+              <div class="campo">
+                <label for="imagemPreset" class="campo-rotulo">Ilustração padrão</label>
+                <select id="imagemPreset" name="imagemPreset" class="campo-entrada">
+                  <option value="assets/img/produtos/classico.svg">Hambúrguer clássico</option>
+                  <option value="assets/img/produtos/brasa-dupla.svg">Hambúrguer brasa dupla</option>
+                  <option value="assets/img/produtos/smash-mostarda.svg">Smash mostarda</option>
+                  <option value="assets/img/produtos/frango-crocante.svg">Frango crocante</option>
+                  <option value="assets/img/produtos/veg-grelhado.svg">Vegetariano grelhado</option>
+                  <option value="assets/img/produtos/batata.svg">Batata rústica</option>
+                  <option value="assets/img/produtos/onion-rings.svg">Anéis de cebola</option>
+                  <option value="assets/img/produtos/refrigerante.svg">Refrigerante lata</option>
+                  <option value="assets/img/produtos/limonada.svg">Limonada da casa</option>
+                  <option value="assets/img/produtos/brownie.svg">Brownie quente</option>
+                </select>
+              </div>
+              <div class="campo">
+                <label for="arquivoImagem" class="campo-rotulo">Ou enviar foto <span class="campo-opcional">(opcional, até 1 MB)</span></label>
+                <input type="file" id="arquivoImagem" class="campo-entrada" accept="image/png,image/jpeg,image/webp,image/svg+xml">
+              </div>
+            </div>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+              <label class="checkbox-linha">
+                <input type="checkbox" id="ativo" name="ativo" checked>
+                <span>Disponível no cardápio</span>
+              </label>
+              <label class="checkbox-linha">
+                <input type="checkbox" id="maisPedido" name="maisPedido">
+                <span>Selo "Mais pedido"</span>
+              </label>
+            </div>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px;">
+              <button type="submit" id="btn-salvar-produto" class="btn btn-primario" data-texto-carregando="Salvando...">Salvar produto</button>
+              <a href="produtos.html" class="btn btn-secundario">Cancelar</a>
+            </div>
+          </form>
+        </section>
+
+        <aside class="admin-previa-sticky" aria-label="Pré-visualização do card no cardápio">
+          <h2 style="font-size: var(--t1);">Prévia no cardápio do cliente</h2>
+          <div id="previa-card-cliente"></div>
+        </aside>
+      </div>
+    </main>
+  </div>
+
+  <script type="module" src="../js/paginas/admin-produto-form.js"></script>
+</body>
+</html>

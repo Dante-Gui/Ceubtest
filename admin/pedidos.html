@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedidos — Torino Admin</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+  <a href="#conteudo-principal" class="pular-conteudo">Ir para os pedidos</a>
+  <div class="admin-shell">
+    <header id="admin-barra-mobile"></header>
+    <aside id="admin-sidebar"></aside>
+
+    <main id="conteudo-principal" class="admin-conteudo">
+      <div class="admin-cabecalho">
+        <div>
+          <h1>Pedidos recebidos</h1>
+          <p id="status-pedidos-admin" class="texto-pequeno texto-secundario" role="status" aria-live="polite"></p>
+        </div>
+        <button type="button" id="btn-atualizar-pedidos" class="btn btn-secundario">
+          <svg class="icone icone-sm" aria-hidden="true"><use href="../assets/icons/sprite.svg#icone-atualizar"></use></svg>
+          <span>Atualizar</span>
+        </button>
+      </div>
+
+      <div id="chips-status-admin" class="chips-lista" role="group" aria-label="Filtrar pedidos por status" style="margin-bottom: 24px;"></div>
+      <div id="tabela-pedidos-container"></div>
+    </main>
+  </div>
+
+  <script type="module" src="../js/paginas/admin-pedidos.js"></script>
+</body>
+</html>

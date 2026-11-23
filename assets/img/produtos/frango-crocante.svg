@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Ilustração do Frango crocante na chapa">
+  <rect width="400" height="300" fill="#EFE8DF"/>
+  <ellipse cx="200" cy="244" rx="130" ry="18" fill="#1F1A17" opacity="0.14"/>
+  <path d="M102 208h196v14c0 12-10 18-22 18H124c-12 0-22-6-22-18v-14z" fill="#C97B2B"/>
+  <!-- Maionese limão -->
+  <path d="M98 202c20-6 40 6 60 0 20-6 40 6 60 0 20-6 40 6 60 0 10-3 18 0 24 2v6H98v-8z" fill="#FFFFFF"/>
+  <!-- Frango panko crocante -->
+  <path d="M84 176c0-14 14-24 32-24h168c18 0 32 10 32 24s-14 26-34 26H118c-20 0-34-12-34-26z" fill="#C8751E"/>
+  <path d="M96 172c12-10 26-8 40-4 14-8 30-8 44-2 16-8 32-8 48-2 16-8 32-8 46-2 14-4 24 0 30 8" stroke="#EBA94C" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <!-- Repolho roxo -->
+  <path d="M100 152c16-10 32 4 48-4 16-8 34 4 50-4 18-8 36 4 54-4 16-8 32 4 46-2v12H100v-2z" fill="#7D3C63"/>
+  <!-- Picles -->
+  <rect x="122" y="142" width="44" height="8" rx="4" fill="#2E7D4F"/>
+  <rect x="228" y="142" width="44" height="8" rx="4" fill="#2E7D4F"/>
+  <!-- Topo brioche -->
+  <path d="M100 144c0-46 42-72 100-72s100 26 100 72H100z" fill="#D98A32"/>
+  <g fill="#F3F1EE">
+    <ellipse cx="164" cy="100" rx="5" ry="3" transform="rotate(-14 164 100)"/>
+    <ellipse cx="204" cy="92" rx="5" ry="3"/>
+    <ellipse cx="242" cy="102" rx="5" ry="3" transform="rotate(14 242 102)"/>
+  </g>
+</svg>

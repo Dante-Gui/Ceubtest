@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produtos — Torino Admin</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+  <a href="#conteudo-principal" class="pular-conteudo">Ir para produtos</a>
+  <div class="admin-shell">
+    <header id="admin-barra-mobile"></header>
+    <aside id="admin-sidebar"></aside>
+
+    <main id="conteudo-principal" class="admin-conteudo">
+      <div class="admin-cabecalho">
+        <div>
+          <h1>Produtos do cardápio</h1>
+          <p id="status-produtos-admin" class="texto-pequeno texto-secundario" role="status" aria-live="polite"></p>
+        </div>
+        <a href="produto-form.html" class="btn btn-primario">
+          <svg class="icone icone-sm" aria-hidden="true"><use href="../assets/icons/sprite.svg#icone-mais"></use></svg>
+          <span>Novo produto</span>
+        </a>
+      </div>
+
+      <div class="admin-filtros">
+        <div class="campo" style="flex: 1; min-width: 220px;">
+          <label for="busca-produto-admin" class="campo-rotulo">Buscar por nome ou categoria</label>
+          <input type="search" id="busca-produto-admin" class="campo-entrada" placeholder="Ex.: Torino clássico, Batata...">
+        </div>
+        <div class="campo" style="min-width: 180px;">
+          <label for="filtro-status-prod" class="campo-rotulo">Status</label>
+          <select id="filtro-status-prod" class="campo-entrada">
+            <option value="todos">Todos</option>
+            <option value="ativos">Somente ativos</option>
+            <option value="inativos">Somente inativos</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="alerta-produtos-admin" style="margin-bottom: 16px;"></div>
+      <div id="tabela-produtos-container"></div>
+      <div id="paginacao-produtos"></div>
+    </main>
+  </div>
+
+  <script type="module" src="../js/paginas/admin-produtos.js"></script>
+</body>
+</html>

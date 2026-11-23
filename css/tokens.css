@@ -1,0 +1,67 @@
+:root {
+  /* Paleta oficial Torino Online */
+  --brasa: #B4361B;
+  --brasa-escura: #8E2812;
+  --mostarda: #F4B223;
+  --carvao: #1F1A17;
+  --fumaca: #F3F1EE;
+  --papel: #FFFFFF;
+  --pimenta: #6A5F58;
+  --sucesso: #2E7D4F;
+  --erro: #C0182B;
+  --aviso: #9A6200;
+
+  /* Superfícies e bordas derivadas exclusivamente dos tokens acima */
+  --borda: color-mix(in srgb, var(--carvao) 13%, transparent);
+  --borda-forte: color-mix(in srgb, var(--carvao) 26%, transparent);
+  --carvao-suave: color-mix(in srgb, var(--carvao) 92%, var(--papel));
+  --fundo-sucesso: color-mix(in srgb, var(--sucesso) 10%, var(--papel));
+  --fundo-erro: color-mix(in srgb, var(--erro) 9%, var(--papel));
+  --fundo-aviso: color-mix(in srgb, var(--mostarda) 22%, var(--papel));
+  --fundo-info: color-mix(in srgb, var(--carvao) 6%, var(--papel));
+  --sombra-flutuante: 0 14px 34px color-mix(in srgb, var(--carvao) 22%, transparent);
+  --backdrop: color-mix(in srgb, var(--carvao) 62%, transparent);
+
+  /* Tipografia */
+  --fonte-titulo: "Bricolage Grotesque", "Arial Black", system-ui, sans-serif;
+  --fonte-texto: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* Escala modular */
+  --t-1: 0.8rem;
+  --t0: 1rem;
+  --t1: 1.25rem;
+  --t2: 1.563rem;
+  --t3: 1.953rem;
+  --t-hero: clamp(2.4rem, 7vw + 1rem, 4.6rem);
+
+  /* Espaçamento */
+  --e1: 4px;
+  --e2: 8px;
+  --e3: 16px;
+  --e4: 24px;
+  --e5: 40px;
+  --e6: 64px;
+
+  /* Formas funcionais */
+  --raio-botao: 999px;
+  --raio-card: 18px;
+  --raio-campo: 12px;
+  --raio-chip: 10px;
+
+  /* Foco e movimento */
+  --foco: 0 0 0 3px var(--papel), 0 0 0 6px var(--carvao);
+  --foco-escuro: 0 0 0 3px var(--carvao), 0 0 0 6px var(--mostarda);
+  --mov-rapido: 140ms;
+  --mov-medio: 260ms;
+  --curva: cubic-bezier(0.2, 0.7, 0.2, 1);
+
+  --largura-max: 1180px;
+  --altura-topo: 68px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --mov-rapido: 0ms;
+    --mov-medio: 0ms;
+  }
+}

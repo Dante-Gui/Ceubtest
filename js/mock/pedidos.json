@@ -1,0 +1,191 @@
+[
+  {
+    "id": 1042,
+    "clienteId": 1,
+    "clienteNome": "Mariana Souza",
+    "clienteTelefone": "(11) 98765-4321",
+    "criadoEm": "2026-11-22T20:15:00-03:00",
+    "atualizadoEm": "2026-11-22T20:28:00-03:00",
+    "status": "Em preparo",
+    "pagamento": {
+      "modalidade": "Pix",
+      "status": "Aprovado",
+      "confirmadoEm": "2026-11-22T20:16:00-03:00"
+    },
+    "endereco": {
+      "apelido": "Casa",
+      "cep": "01310-100",
+      "logradouro": "Av. Paulista",
+      "numero": "1420",
+      "complemento": "Apto 42",
+      "bairro": "Bela Vista",
+      "cidade": "São Paulo",
+      "uf": "SP",
+      "referencia": "Portaria de vidro ao lado da padaria"
+    },
+    "itens": [
+      {
+        "produtoId": 1,
+        "nome": "Torino clássico",
+        "precoCentavos": 2990,
+        "quantidade": 2
+      },
+      {
+        "produtoId": 6,
+        "nome": "Batata rústica",
+        "precoCentavos": 1800,
+        "quantidade": 1
+      }
+    ],
+    "subtotalCentavos": 7780,
+    "taxaEntregaCentavos": 600,
+    "totalCentavos": 8380,
+    "observacoes": "Sem picles em um dos hambúrgueres.",
+    "historicoStatus": [
+      { "status": "Recebido", "em": "2026-11-22T20:15:00-03:00" },
+      { "status": "Em preparo", "em": "2026-11-22T20:28:00-03:00" }
+    ]
+  },
+  {
+    "id": 1041,
+    "clienteId": 1,
+    "clienteNome": "Mariana Souza",
+    "clienteTelefone": "(11) 98765-4321",
+    "criadoEm": "2026-11-20T21:05:00-03:00",
+    "atualizadoEm": "2026-11-20T21:48:00-03:00",
+    "status": "Entregue",
+    "pagamento": {
+      "modalidade": "Cartão",
+      "status": "Aprovado",
+      "confirmadoEm": "2026-11-20T21:06:00-03:00"
+    },
+    "endereco": {
+      "apelido": "Casa",
+      "cep": "01310-100",
+      "logradouro": "Av. Paulista",
+      "numero": "1420",
+      "complemento": "Apto 42",
+      "bairro": "Bela Vista",
+      "cidade": "São Paulo",
+      "uf": "SP",
+      "referencia": "Portaria de vidro ao lado da padaria"
+    },
+    "itens": [
+      {
+        "produtoId": 2,
+        "nome": "Brasa dupla",
+        "precoCentavos": 3850,
+        "quantidade": 1
+      },
+      {
+        "produtoId": 9,
+        "nome": "Limonada da casa 400 ml",
+        "precoCentavos": 1290,
+        "quantidade": 1
+      }
+    ],
+    "subtotalCentavos": 5140,
+    "taxaEntregaCentavos": 600,
+    "totalCentavos": 5740,
+    "observacoes": "",
+    "historicoStatus": [
+      { "status": "Recebido", "em": "2026-11-20T21:05:00-03:00" },
+      { "status": "Em preparo", "em": "2026-11-20T21:14:00-03:00" },
+      { "status": "Saiu para entrega", "em": "2026-11-20T21:31:00-03:00" },
+      { "status": "Entregue", "em": "2026-11-20T21:48:00-03:00" }
+    ]
+  },
+  {
+    "id": 1043,
+    "clienteId": 2,
+    "clienteNome": "Lucas Ferreira",
+    "clienteTelefone": "(11) 97654-3210",
+    "criadoEm": "2026-11-22T22:10:00-03:00",
+    "atualizadoEm": "2026-11-22T22:10:00-03:00",
+    "status": "Recebido",
+    "pagamento": {
+      "modalidade": "Dinheiro na entrega",
+      "status": "Pendente",
+      "confirmadoEm": null
+    },
+    "endereco": {
+      "apelido": "Apartamento",
+      "cep": "05422-001",
+      "logradouro": "Rua dos Pinheiros",
+      "numero": "890",
+      "complemento": "Bloco B, 31",
+      "bairro": "Pinheiros",
+      "cidade": "São Paulo",
+      "uf": "SP",
+      "referencia": ""
+    },
+    "itens": [
+      {
+        "produtoId": 3,
+        "nome": "Smash mostarda da casa",
+        "precoCentavos": 3390,
+        "quantidade": 1
+      },
+      {
+        "produtoId": 7,
+        "nome": "Anéis de cebola",
+        "precoCentavos": 2150,
+        "quantidade": 1
+      },
+      {
+        "produtoId": 8,
+        "nome": "Refrigerante lata 350 ml",
+        "precoCentavos": 750,
+        "quantidade": 2
+      }
+    ],
+    "subtotalCentavos": 7040,
+    "taxaEntregaCentavos": 600,
+    "totalCentavos": 7640,
+    "observacoes": "Troco para R$ 100.",
+    "historicoStatus": [
+      { "status": "Recebido", "em": "2026-11-22T22:10:00-03:00" }
+    ]
+  },
+  {
+    "id": 1039,
+    "clienteId": 2,
+    "clienteNome": "Lucas Ferreira",
+    "clienteTelefone": "(11) 97654-3210",
+    "criadoEm": "2026-11-18T19:40:00-03:00",
+    "atualizadoEm": "2026-11-18T19:55:00-03:00",
+    "status": "Cancelado",
+    "pagamento": {
+      "modalidade": "Cartão",
+      "status": "Recusado",
+      "confirmadoEm": null
+    },
+    "endereco": {
+      "apelido": "Apartamento",
+      "cep": "05422-001",
+      "logradouro": "Rua dos Pinheiros",
+      "numero": "890",
+      "complemento": "Bloco B, 31",
+      "bairro": "Pinheiros",
+      "cidade": "São Paulo",
+      "uf": "SP",
+      "referencia": ""
+    },
+    "itens": [
+      {
+        "produtoId": 1,
+        "nome": "Torino clássico",
+        "precoCentavos": 2990,
+        "quantidade": 1
+      }
+    ],
+    "subtotalCentavos": 2990,
+    "taxaEntregaCentavos": 600,
+    "totalCentavos": 3590,
+    "observacoes": "",
+    "historicoStatus": [
+      { "status": "Recebido", "em": "2026-11-18T19:40:00-03:00" },
+      { "status": "Cancelado", "em": "2026-11-18T19:55:00-03:00" }
+    ]
+  }
+]

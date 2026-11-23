@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 420" role="img" aria-label="Hambúrguer Torino na chapa com queijo derretido e fumaça">
+  <rect width="560" height="420" rx="24" fill="#2A231F"/>
+  <!-- Chapa quente ao fundo -->
+  <ellipse cx="280" cy="346" rx="220" ry="34" fill="#171310"/>
+  <ellipse cx="280" cy="340" rx="205" ry="26" fill="#352C27"/>
+  <path d="M108 338h344" stroke="#B4361B" stroke-width="3" stroke-dasharray="14 14" stroke-linecap="round" opacity="0.65"/>
+
+  <!-- Linhas leves de calor -->
+  <path d="M155 104c-8-18 8-28 0-46" stroke="#F4B223" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.5"/>
+  <path d="M280 76c-8-18 8-28 0-46" stroke="#B4361B" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.7"/>
+  <path d="M402 108c-8-18 8-28 0-46" stroke="#F4B223" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.5"/>
+
+  <!-- Base do pão brioche -->
+  <path d="M128 292h304v20c0 18-16 30-36 30H164c-20 0-36-12-36-30v-20z" fill="#C97B2B"/>
+  <path d="M128 292h304v8H128z" fill="#E39B43"/>
+
+  <!-- Molho da casa -->
+  <path d="M122 284c20-8 38 8 58 2 22-6 44 10 66 2 22-8 44 8 68 2 24-6 46 8 68 2 20-6 36 4 56-4v10H122v-14z" fill="#F3E5C8"/>
+
+  <!-- Carne 2 (inferior) -->
+  <rect x="116" y="246" width="328" height="42" rx="21" fill="#5A2214"/>
+  <rect x="122" y="252" width="316" height="14" rx="7" fill="#7D301C"/>
+  <!-- Marcas da grelha -->
+  <path d="M170 250l18 32M235 250l18 32M300 250l18 32M365 250l18 32" stroke="#36140B" stroke-width="5" stroke-linecap="round" opacity="0.55"/>
+
+  <!-- Queijo cheddar derretido inferior -->
+  <path d="M118 242h324l-14 20-34-10-42 26-38-20-48 22-40-20-44 18-32-16-32-20z" fill="#F4B223"/>
+
+  <!-- Carne 1 (superior) -->
+  <rect x="120" y="202" width="320" height="42" rx="21" fill="#6E2816"/>
+  <rect x="128" y="208" width="304" height="14" rx="7" fill="#8E351D"/>
+  <path d="M180 206l16 30M250 206l16 30M320 206l16 30M385 206l16 30" stroke="#3E170D" stroke-width="5" stroke-linecap="round" opacity="0.55"/>
+
+  <!-- Queijo prato/cheddar superior -->
+  <path d="M120 198h320l-16 18-36-8-46 28-44-24-52 26-44-22-48 16-34-34z" fill="#F4B223"/>
+  <path d="M124 198h312l-10 8H134z" fill="#FFD166"/>
+
+  <!-- Tomate e alface -->
+  <rect x="136" y="182" width="136" height="16" rx="8" fill="#C0182B"/>
+  <rect x="286" y="182" width="138" height="16" rx="8" fill="#C0182B"/>
+  <path d="M114 184c14-16 32-14 48-4 16-14 36-14 54-2 18-14 40-14 58-2 18-14 40-14 58-2 18-12 38-12 56-2 16-10 34-10 50 4 4 8-8 14-20 12H132c-12 2-22-4-18-12z" fill="#2E7D4F"/>
+  <path d="M132 180c14-8 28-6 42 2 18-8 34-8 50 2 18-8 38-8 56 2 18-8 38-8 56 2 18-8 36-8 52 0" stroke="#45A26B" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- Topo do pão brioche -->
+  <path d="M122 178c0-66 64-106 158-106s158 40 158 106H122z" fill="#D98A32"/>
+  <path d="M142 164c12-48 64-78 138-78 62 0 112 22 132 62-26-26-74-42-132-42-66 0-112 22-138 58z" fill="#EBA64E" opacity="0.65"/>
+
+  <!-- Gergelim -->
+  <g fill="#F3F1EE">
+    <ellipse cx="204" cy="116" rx="7" ry="4" transform="rotate(-18 204 116)"/>
+    <ellipse cx="246" cy="100" rx="7" ry="4" transform="rotate(8 246 100)"/>
+    <ellipse cx="292" cy="96" rx="7" ry="4" transform="rotate(-8 292 96)"/>
+    <ellipse cx="342" cy="108" rx="7" ry="4" transform="rotate(20 342 108)"/>
+    <ellipse cx="228" cy="136" rx="7" ry="4" transform="rotate(14 228 136)"/>
+    <ellipse cx="278" cy="126" rx="7" ry="4" transform="rotate(-12 278 126)"/>
+    <ellipse cx="328" cy="136" rx="7" ry="4" transform="rotate(10 328 136)"/>
+    <ellipse cx="378" cy="134" rx="7" ry="4" transform="rotate(26 378 134)"/>
+    <ellipse cx="176" cy="142" rx="7" ry="4" transform="rotate(-24 176 142)"/>
+  </g>
+
+  <!-- Selo discreto da chapa -->
+  <rect x="378" y="34" width="144" height="36" rx="18" fill="#B4361B"/>
+  <text x="450" y="57" text-anchor="middle" fill="#FFFFFF" font-family="Figtree, system-ui, sans-serif" font-size="14" font-weight="700">Blend 160 g</text>
+</svg>

@@ -1,0 +1,159 @@
+/* Assinatura visual: a comanda da hamburgueria (usada apenas em T05, T07, T08, T09 e T16) */
+.comanda {
+  position: relative;
+  background-color: var(--papel);
+  border: 1.5px solid var(--borda-forte);
+  border-bottom: 0;
+  border-radius: 0;
+  padding: var(--e4);
+  margin-bottom: 14px;
+}
+
+/* Borda inferior serrilhada em CSS puro */
+.comanda::after {
+  content: "";
+  position: absolute;
+  left: -1.5px;
+  right: -1.5px;
+  bottom: -12px;
+  height: 12px;
+  background:
+    linear-gradient(135deg, var(--papel) 50%, transparent 50%) 0 0 / 16px 12px repeat-x,
+    linear-gradient(225deg, var(--papel) 50%, transparent 50%) 0 0 / 16px 12px repeat-x;
+  filter: drop-shadow(0 1.5px 0 var(--borda-forte));
+}
+
+.comanda-compacta {
+  padding: var(--e3);
+}
+
+.comanda-topo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--e3);
+  padding-bottom: var(--e3);
+  border-bottom: 2px dashed var(--borda-forte);
+  margin-bottom: var(--e3);
+}
+
+.comanda-titulo {
+  font-family: var(--fonte-titulo);
+  font-size: var(--t2);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.comanda-subtitulo {
+  font-size: var(--t-1);
+  color: var(--pimenta);
+  margin-top: 2px;
+}
+
+.comanda-senha {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  line-height: 1;
+}
+
+.comanda-senha-rotulo {
+  font-size: var(--t-1);
+  color: var(--pimenta);
+  font-weight: 600;
+}
+
+.comanda-senha-numero {
+  font-family: var(--fonte-titulo);
+  font-size: var(--t3);
+  font-weight: 800;
+  color: var(--carvao);
+  font-variant-numeric: tabular-nums;
+}
+
+.comanda-itens {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--e3);
+}
+
+.comanda-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--e2);
+  animation: entrada-linha var(--mov-medio) var(--curva);
+}
+
+@keyframes entrada-linha {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.comanda-linha {
+  display: flex;
+  align-items: baseline;
+  gap: var(--e2);
+}
+
+.comanda-item-nome {
+  font-weight: 600;
+}
+
+.comanda-pontilhado {
+  flex: 1;
+  border-bottom: 1.5px dotted var(--borda-forte);
+  min-width: 16px;
+  transform: translateY(-4px);
+}
+
+.comanda-item-preco {
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.comanda-item-controles {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--e2);
+  flex-wrap: wrap;
+}
+
+.comanda-resumo {
+  margin-top: var(--e4);
+  padding-top: var(--e3);
+  border-top: 2px dashed var(--borda-forte);
+  display: flex;
+  flex-direction: column;
+  gap: var(--e2);
+}
+
+.comanda-total-faixa {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--e2);
+  margin-top: var(--e2);
+  padding: 12px 14px;
+  background-color: var(--mostarda);
+  color: var(--carvao);
+  font-family: var(--fonte-titulo);
+  font-size: var(--t1);
+  font-weight: 800;
+}
+
+.comanda-obs {
+  margin-top: var(--e3);
+  padding: 10px 12px;
+  background: var(--fumaca);
+  border-left: 3px solid var(--carvao);
+  font-size: var(--t-1);
+}

@@ -1,0 +1,178 @@
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.campo-rotulo {
+  font-weight: 600;
+  font-size: var(--t-1);
+  color: var(--carvao);
+}
+
+.campo-opcional {
+  font-weight: 400;
+  color: var(--pimenta);
+}
+
+.campo-entrada {
+  width: 100%;
+  min-height: 46px;
+  padding: 10px 14px;
+  background-color: var(--papel);
+  border: 1.5px solid var(--borda-forte);
+  border-radius: var(--raio-campo);
+  color: var(--carvao);
+  transition: border-color var(--mov-rapido) var(--curva);
+}
+
+.campo-entrada::placeholder {
+  color: var(--pimenta);
+}
+
+.campo-entrada:focus {
+  outline: none;
+  border-color: var(--carvao);
+  box-shadow: var(--foco);
+}
+
+.campo-entrada[aria-invalid="true"] {
+  border-color: var(--erro);
+  background-color: var(--fundo-erro);
+}
+
+.campo-entrada.campo-valido {
+  border-color: var(--sucesso);
+}
+
+textarea.campo-entrada {
+  min-height: 96px;
+  resize: vertical;
+}
+
+.campo-ajuda {
+  font-size: var(--t-1);
+  color: var(--pimenta);
+}
+
+.campo-erro {
+  display: none;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--t-1);
+  font-weight: 600;
+  color: var(--erro);
+}
+
+.campo-erro.visivel {
+  display: flex;
+}
+
+.campo-linha {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--e3);
+}
+
+@media (min-width: 480px) {
+  .campo-linha-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .campo-linha-cep {
+    grid-template-columns: 1fr auto;
+    align-items: end;
+  }
+
+  .campo-linha-numero {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.forca-senha {
+  display: flex;
+  align-items: center;
+  gap: var(--e2);
+  margin-top: 2px;
+}
+
+.forca-senha-barra {
+  flex: 1;
+  height: 6px;
+  background: var(--borda);
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.forca-senha-preenchimento {
+  height: 100%;
+  width: 0;
+  background: var(--erro);
+  transition: width var(--mov-medio) var(--curva), background-color var(--mov-medio) var(--curva);
+}
+
+.forca-senha[data-nivel="media"] .forca-senha-preenchimento {
+  background: var(--aviso);
+}
+
+.forca-senha[data-nivel="forte"] .forca-senha-preenchimento {
+  background: var(--sucesso);
+}
+
+.forca-senha-texto {
+  font-size: var(--t-1);
+  color: var(--pimenta);
+  min-width: 68px;
+}
+
+.opcao-cartao {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--e3);
+  padding: var(--e3);
+  background: var(--papel);
+  border: 2px solid var(--borda);
+  border-radius: var(--raio-card);
+  cursor: pointer;
+  transition: border-color var(--mov-rapido) var(--curva), background-color var(--mov-rapido) var(--curva);
+}
+
+.opcao-cartao:hover {
+  border-color: var(--borda-forte);
+}
+
+.opcao-cartao:has(input:checked) {
+  border-color: var(--brasa);
+  background: color-mix(in srgb, var(--brasa) 5%, var(--papel));
+}
+
+.opcao-cartao input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+  accent-color: var(--brasa);
+  flex-shrink: 0;
+}
+
+.opcao-cartao-conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+
+.checkbox-linha {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--e2);
+  min-height: 44px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.checkbox-linha input {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--brasa);
+}

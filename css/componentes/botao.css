@@ -1,0 +1,160 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--e2);
+  min-height: 44px;
+  padding: 10px 20px;
+  border: 2px solid transparent;
+  border-radius: var(--raio-botao);
+  font-weight: 600;
+  font-size: var(--t0);
+  line-height: 1.2;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color var(--mov-rapido) var(--curva),
+    color var(--mov-rapido) var(--curva),
+    border-color var(--mov-rapido) var(--curva),
+    opacity var(--mov-rapido) var(--curva);
+}
+
+.btn-bloco {
+  width: 100%;
+}
+
+.btn-sm {
+  min-height: 44px;
+  padding: 8px 14px;
+  font-size: var(--t-1);
+}
+
+.btn-primario {
+  background-color: var(--brasa);
+  color: var(--papel);
+}
+
+.btn-primario:hover:not(:disabled) {
+  background-color: var(--brasa-escura);
+  color: var(--papel);
+}
+
+.btn-secundario {
+  background-color: transparent;
+  border-color: var(--carvao);
+  color: var(--carvao);
+}
+
+.btn-secundario:hover:not(:disabled) {
+  background-color: var(--carvao);
+  color: var(--papel);
+}
+
+.btn-fantasma {
+  background-color: transparent;
+  color: var(--carvao);
+}
+
+.btn-fantasma:hover:not(:disabled) {
+  background-color: var(--fundo-info);
+  color: var(--carvao);
+}
+
+.btn-perigo {
+  background-color: var(--erro);
+  color: var(--papel);
+}
+
+.btn-perigo:hover:not(:disabled) {
+  background-color: color-mix(in srgb, var(--erro) 82%, var(--carvao));
+  color: var(--papel);
+}
+
+.btn-perigo-contorno {
+  background-color: transparent;
+  border-color: var(--erro);
+  color: var(--erro);
+}
+
+.btn-perigo-contorno:hover:not(:disabled) {
+  background-color: var(--erro);
+  color: var(--papel);
+}
+
+.btn:disabled,
+.btn[aria-disabled="true"] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn.carregando {
+  pointer-events: none;
+}
+
+.btn-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: girar 650ms linear infinite;
+}
+
+@keyframes girar {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-spinner {
+    animation: none;
+  }
+}
+
+.btn-icone {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border-radius: var(--raio-botao);
+}
+
+.seletor-qtd {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--e2);
+  background: var(--fumaca);
+  border: 1.5px solid var(--borda);
+  border-radius: var(--raio-botao);
+  padding: 2px;
+}
+
+.seletor-qtd button {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: var(--raio-botao);
+  background: var(--papel);
+  color: var(--carvao);
+  cursor: pointer;
+}
+
+.seletor-qtd button:hover:not(:disabled) {
+  background: var(--carvao);
+  color: var(--papel);
+}
+
+.seletor-qtd button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.seletor-qtd-valor {
+  min-width: 28px;
+  text-align: center;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}

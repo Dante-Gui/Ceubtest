@@ -1,0 +1,73 @@
+.chips-faixa {
+  position: sticky;
+  top: var(--altura-topo);
+  z-index: 20;
+  background-color: var(--fumaca);
+  border-bottom: 1px solid var(--borda);
+  padding-block: var(--e2);
+}
+
+.chips-lista {
+  display: flex;
+  align-items: center;
+  gap: var(--e2);
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding-block: 2px;
+}
+
+.chips-lista::-webkit-scrollbar {
+  display: none;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--e2);
+  min-height: 44px;
+  padding: 8px 16px;
+  background-color: var(--papel);
+  border: 1.5px solid var(--borda);
+  border-radius: var(--raio-chip);
+  color: var(--carvao);
+  font-weight: 600;
+  font-size: var(--t-1);
+  white-space: nowrap;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background-color var(--mov-rapido) var(--curva),
+    border-color var(--mov-rapido) var(--curva),
+    color var(--mov-rapido) var(--curva);
+}
+
+.chip:hover {
+  border-color: var(--carvao);
+}
+
+.chip[aria-pressed="true"],
+.chip.ativo {
+  background-color: var(--carvao);
+  border-color: var(--carvao);
+  color: var(--papel);
+}
+
+.chip-contador {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 22px;
+  height: 22px;
+  padding-inline: 6px;
+  border-radius: var(--raio-botao);
+  background: var(--fumaca);
+  color: var(--carvao);
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.chip[aria-pressed="true"] .chip-contador,
+.chip.ativo .chip-contador {
+  background: var(--mostarda);
+  color: var(--carvao);
+}

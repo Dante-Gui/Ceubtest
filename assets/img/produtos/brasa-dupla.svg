@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Ilustração do Brasa dupla">
+  <rect width="400" height="300" fill="#26201D"/>
+  <ellipse cx="200" cy="252" rx="136" ry="18" fill="#120F0D"/>
+  <!-- Base pão -->
+  <path d="M98 218h204v12c0 12-10 18-22 18H120c-12 0-22-6-22-18v-12z" fill="#C47527"/>
+  <!-- Carne 2 -->
+  <rect x="90" y="186" width="220" height="32" rx="16" fill="#5A2013"/>
+  <path d="M92 184h216l-12 16-38-8-46 22-46-20-44 16-30-26z" fill="#F4B223"/>
+  <!-- Bacon crocante -->
+  <path d="M94 172c24-10 48 10 72 0 24-10 48 10 72 0 24-10 48 10 72 0v12c-24 10-48-10-72 0-24 10-48-10-72 0-24 10-48-10-72 0v-12z" fill="#B4361B"/>
+  <path d="M98 176c24-8 46 8 70 0 24-8 46 8 70 0 24-8 44 8 66 0" stroke="#F3C6A5" stroke-width="3" fill="none"/>
+  <!-- Carne 1 -->
+  <rect x="92" y="142" width="216" height="32" rx="16" fill="#6E2816"/>
+  <path d="M94 140h212l-14 16-36-8-46 22-44-18-44 14-28-26z" fill="#F4B223"/>
+  <!-- Cebola caramelizada -->
+  <path d="M108 134c20-10 40 6 60-2 20-8 40 6 62-2 22-8 40 6 60-2v12H108v-6z" fill="#6A381F"/>
+  <!-- Topo brioche -->
+  <path d="M98 132c0-44 42-70 102-70s102 26 102 70H98z" fill="#D98A32"/>
+  <g fill="#F3F1EE">
+    <ellipse cx="160" cy="90" rx="5" ry="3" transform="rotate(-14 160 90)"/>
+    <ellipse cx="200" cy="82" rx="5" ry="3"/>
+    <ellipse cx="240" cy="92" rx="5" ry="3" transform="rotate(16 240 92)"/>
+    <ellipse cx="182" cy="108" rx="5" ry="3" transform="rotate(10 182 108)"/>
+    <ellipse cx="222" cy="108" rx="5" ry="3" transform="rotate(-10 222 108)"/>
+  </g>
+</svg>

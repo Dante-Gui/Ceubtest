@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Ilustração de Anéis de cebola crocantes">
+  <rect width="400" height="300" fill="#ECE4DA"/>
+  <ellipse cx="200" cy="242" rx="130" ry="18" fill="#1F1A17" opacity="0.14"/>
+  <!-- Prato escuro -->
+  <ellipse cx="200" cy="224" rx="134" ry="26" fill="#1F1A17"/>
+  <ellipse cx="200" cy="220" rx="116" ry="18" fill="#322B27"/>
+  <!-- Anéis de cebola empilhados -->
+  <g fill="none" stroke-width="20">
+    <ellipse cx="164" cy="196" rx="54" ry="22" stroke="#D1831E"/>
+    <ellipse cx="234" cy="192" rx="52" ry="22" stroke="#E09428"/>
+    <ellipse cx="196" cy="160" rx="56" ry="22" stroke="#C77416"/>
+    <ellipse cx="212" cy="126" rx="48" ry="20" stroke="#F4B223"/>
+  </g>
+  <!-- Potinho de barbecue -->
+  <path d="M276 200h56l-6 34h-44l-6-34z" fill="#FFFFFF" stroke="#1F1A17" stroke-width="2"/>
+  <ellipse cx="304" cy="200" rx="28" ry="8" fill="#8E2812"/>
+</svg>

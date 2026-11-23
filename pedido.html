@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acompanhar pedido — Torino Online</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/cliente.css">
+</head>
+<body>
+  <a href="#conteudo-principal" class="pular-conteudo">Ir para o acompanhamento do pedido</a>
+  <header id="topo-site"></header>
+
+  <main id="conteudo-principal" class="secao">
+    <div class="container">
+      <a href="meus-pedidos.html" class="voltar-link">
+        <svg class="icone icone-sm" aria-hidden="true"><use href="assets/icons/sprite.svg#icone-seta-voltar"></use></svg>
+        <span>Voltar para meus pedidos</span>
+      </a>
+
+      <div class="secao-cabecalho">
+        <h1>Acompanhar pedido</h1>
+        <button type="button" id="btn-atualizar-pedido" class="btn btn-secundario btn-sm">
+          <svg class="icone icone-sm" aria-hidden="true"><use href="assets/icons/sprite.svg#icone-atualizar"></use></svg>
+          <span>Atualizar</span>
+        </button>
+      </div>
+
+      <p id="status-acomp" class="sr-only" role="status" aria-live="polite"></p>
+      <div id="conteudo-pedido"></div>
+    </div>
+  </main>
+
+  <footer id="rodape-site"></footer>
+  <script type="module" src="js/paginas/pedido.js"></script>
+</body>
+</html>

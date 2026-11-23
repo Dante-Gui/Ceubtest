@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Ilustração do Cogumelo na brasa vegetariano">
+  <rect width="400" height="300" fill="#E3EAE4"/>
+  <ellipse cx="200" cy="244" rx="130" ry="18" fill="#1F1A17" opacity="0.14"/>
+  <!-- Base pão australiano -->
+  <path d="M100 208h200v14c0 12-10 18-22 18H122c-12 0-22-6-22-18v-14z" fill="#593A28"/>
+  <!-- Burger cogumelo -->
+  <rect x="92" y="172" width="216" height="34" rx="17" fill="#6A5F58"/>
+  <rect x="102" y="178" width="196" height="10" rx="5" fill="#82756D"/>
+  <!-- Queijo meia-cura -->
+  <path d="M96 168h208l-14 16-36-6-48 20-48-18-42 14-20-26z" fill="#F5E4B8"/>
+  <!-- Rúcula e pesto -->
+  <path d="M92 162c18-16 36-10 54-2 18-14 36-12 54-2 18-14 36-12 54-2 18-12 36-10 54 2v10H92v-8z" fill="#2E7D4F"/>
+  <!-- Topo pão australiano -->
+  <path d="M98 154c0-46 42-74 102-74s102 28 102 74H98z" fill="#684531"/>
+  <path d="M150 96h100M136 112h128" stroke="#B6967D" stroke-width="3" stroke-dasharray="6 10" stroke-linecap="round" opacity="0.7"/>
+</svg>

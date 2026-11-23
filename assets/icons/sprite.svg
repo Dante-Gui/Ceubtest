@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="icone-busca" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="11" cy="11" r="7"/>
+    <path d="m20 20-3.5-3.5"/>
+  </symbol>
+  <symbol id="icone-carrinho" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M6 6h15l-1.5 9h-12z"/>
+    <path d="M6 6 5 3H2"/>
+    <circle cx="9.5" cy="19.5" r="1.5"/>
+    <circle cx="17.5" cy="19.5" r="1.5"/>
+  </symbol>
+  <symbol id="icone-usuario" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="8" r="4"/>
+    <path d="M4 20c1.5-4 5-6 8-6s6.5 2 8 6"/>
+  </symbol>
+  <symbol id="icone-pedido" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M6 3h12v18l-2-1.5L14 21l-2-1.5L10 21l-2-1.5L6 21V3z"/>
+    <path d="M9 8h6M9 12h6M9 16h4"/>
+  </symbol>
+  <symbol id="icone-chama" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 2c2 3.5 5 6 5 10a5 5 0 1 1-10 0c0-2.5 1.5-4.5 2.5-6 .5 1.5 1.5 2.5 2.5 2.5C11.5 6.5 11.5 4 12 2z"/>
+  </symbol>
+  <symbol id="icone-mais" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+    <path d="M12 5v14M5 12h14"/>
+  </symbol>
+  <symbol id="icone-menos" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+    <path d="M5 12h14"/>
+  </symbol>
+  <symbol id="icone-lixeira" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3 6h18M8 6V4h8v2M6 6l1 14h10l1-14M10 11v6M14 11v6"/>
+  </symbol>
+  <symbol id="icone-fechar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+    <path d="m6 6 12 12M18 6 6 18"/>
+  </symbol>
+  <symbol id="icone-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="9"/>
+    <path d="m8.5 12.5 2.5 2.5 4.5-5"/>
+  </symbol>
+  <symbol id="icone-erro" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="9"/>
+    <path d="M12 8v5M12 16.5h.01"/>
+  </symbol>
+  <symbol id="icone-aviso" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 3 2.5 20h19L12 3z"/>
+    <path d="M12 10v4M12 17h.01"/>
+  </symbol>
+  <symbol id="icone-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="9"/>
+    <path d="M12 11v5M12 8h.01"/>
+  </symbol>
+  <symbol id="icone-seta-voltar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M19 12H5M11 6l-6 6 6 6"/>
+  </symbol>
+  <symbol id="icone-local" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 21s-6-5.3-6-10a6 6 0 1 1 12 0c0 4.7-6 10-6 10z"/>
+    <circle cx="12" cy="11" r="2.2"/>
+  </symbol>
+  <symbol id="icone-pix" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m12 3 9 9-9 9-9-9 9-9z"/>
+    <path d="M8.5 12h7M12 8.5v7"/>
+  </symbol>
+  <symbol id="icone-cartao" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="2.5" y="5.5" width="19" height="13" rx="2.5"/>
+    <path d="M2.5 10h19M6.5 14.5h4"/>
+  </symbol>
+  <symbol id="icone-dinheiro" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="2.5" y="6" width="19" height="12" rx="2"/>
+    <circle cx="12" cy="12" r="2.5"/>
+    <path d="M6 9v.01M18 15v.01"/>
+  </symbol>
+  <symbol id="icone-atualizar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 11a8 8 0 1 0 2 5.3"/>
+    <path d="M20 4v7h-7"/>
+  </symbol>
+  <symbol id="icone-editar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 20h4l10.5-10.5-4-4L4 16v4z"/>
+    <path d="m12.5 7.5 4 4"/>
+  </symbol>
+  <symbol id="icone-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+    <path d="M4 7h16M4 12h16M4 17h16"/>
+  </symbol>
+  <symbol id="icone-sair" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+    <path d="M16 17l5-5-5-5M21 12H9"/>
+  </symbol>
+  <symbol id="icone-historico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="8.5"/>
+    <path d="M12 7.5V12l3 2"/>
+  </symbol>
+  <symbol id="icone-produtos" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 11c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5H4z"/>
+    <path d="M3 14.5h18"/>
+    <path d="M5 17.5h14a1.5 1.5 0 0 1 0 3H5a1.5 1.5 0 0 1 0-3z"/>
+  </symbol>
+  <symbol id="icone-estrela" viewBox="0 0 24 24" fill="currentColor">
+    <path d="m12 2.5 2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.3 6.2 20.4l1.1-6.5L2.6 9.3l6.5-.9L12 2.5z"/>
+  </symbol>
+</svg>

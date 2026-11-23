@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "nome": "Mariana Souza",
+    "email": "cliente@torino.com",
+    "telefone": "(11) 98765-4321",
+    "senhaMock": "Torino@123"
+  },
+  {
+    "id": 2,
+    "nome": "Lucas Ferreira",
+    "email": "lucas@exemplo.com",
+    "telefone": "(11) 97654-3210",
+    "senhaMock": "Torino@123"
+  }
+]

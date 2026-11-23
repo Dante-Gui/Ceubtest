@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criar conta — Torino Online</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/cliente.css">
+</head>
+<body>
+  <a href="#conteudo-principal" class="pular-conteudo">Ir para o formulário de cadastro</a>
+  <header id="topo-site"></header>
+
+  <main id="conteudo-principal" class="secao">
+    <div class="container auth-grade">
+      <section class="painel-form" aria-labelledby="titulo-cadastro">
+        <div>
+          <h1 id="titulo-cadastro">Criar conta</h1>
+          <p class="texto-secundario" style="margin-top: 4px;">Cadastre-se para salvar endereços e acompanhar sua comanda.</p>
+        </div>
+
+        <div id="resumo-cadastro"></div>
+
+        <form id="form-cadastro" novalidate style="display: flex; flex-direction: column; gap: 16px;">
+          <div class="campo">
+            <label for="nome" class="campo-rotulo">Nome completo</label>
+            <input type="text" id="nome" name="nome" class="campo-entrada" autocomplete="name" required>
+          </div>
+
+          <div class="campo">
+            <label for="email" class="campo-rotulo">E-mail</label>
+            <input type="email" id="email" name="email" class="campo-entrada" autocomplete="email" placeholder="voce@exemplo.com" required>
+          </div>
+
+          <div class="campo">
+            <label for="telefone" class="campo-rotulo">Telefone com DDD</label>
+            <input type="tel" id="telefone" name="telefone" class="campo-entrada" autocomplete="tel" placeholder="(11) 99999-9999" required>
+          </div>
+
+          <div class="campo">
+            <label for="senha" class="campo-rotulo">Senha</label>
+            <input type="password" id="senha" name="senha" class="campo-entrada" autocomplete="new-password" required>
+            <span id="ajuda-senha" class="campo-ajuda">Mínimo de 6 caracteres.</span>
+            <div id="forca-senha" class="forca-senha" data-nivel="vazia" aria-live="polite">
+              <div class="forca-senha-barra"><div id="forca-preenchimento" class="forca-senha-preenchimento"></div></div>
+              <span id="forca-texto" class="forca-senha-texto"></span>
+            </div>
+          </div>
+
+          <div class="campo">
+            <label for="confirmarSenha" class="campo-rotulo">Confirmar senha</label>
+            <input type="password" id="confirmarSenha" name="confirmarSenha" class="campo-entrada" autocomplete="new-password" required>
+          </div>
+
+          <button type="submit" class="btn btn-primario btn-bloco" data-texto-carregando="Criando conta...">Criar conta</button>
+        </form>
+
+        <p class="texto-pequeno texto-secundario">
+          Já tem cadastro? <a id="link-ir-login" href="login.html">Entrar na conta</a>
+        </p>
+      </section>
+
+      <aside class="auth-ilustracao" aria-hidden="true">
+        <img src="assets/img/hero-burger.svg" alt="" width="480" height="360">
+        <h2>Sua comanda sempre à mão</h2>
+        <p style="color: color-mix(in srgb, var(--papel) 80%, transparent);">
+          Salve seus endereços de entrega e acompanhe cada etapa da chapa até a sua porta.
+        </p>
+      </aside>
+    </div>
+  </main>
+
+  <footer id="rodape-site"></footer>
+  <script type="module" src="js/paginas/cadastro.js"></script>
+</body>
+</html>

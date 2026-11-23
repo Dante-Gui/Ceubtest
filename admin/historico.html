@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Histórico de pedidos — Torino Admin</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+  <a href="#conteudo-principal" class="pular-conteudo">Ir para o histórico</a>
+  <div class="admin-shell">
+    <header id="admin-barra-mobile"></header>
+    <aside id="admin-sidebar"></aside>
+
+    <main id="conteudo-principal" class="admin-conteudo">
+      <div class="admin-cabecalho">
+        <div>
+          <h1>Histórico de pedidos</h1>
+          <p id="status-historico-admin" class="texto-pequeno texto-secundario" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+
+      <form id="form-filtros-historico" class="admin-filtros">
+        <div class="campo" style="min-width: 170px;">
+          <label for="filtro-status" class="campo-rotulo">Status</label>
+          <select id="filtro-status" name="status" class="campo-entrada"></select>
+        </div>
+
+        <div class="campo">
+          <label for="data-inicio" class="campo-rotulo">Data inicial</label>
+          <input type="date" id="data-inicio" name="dataInicio" class="campo-entrada">
+        </div>
+
+        <div class="campo">
+          <label for="data-fim" class="campo-rotulo">Data final</label>
+          <input type="date" id="data-fim" name="dataFim" class="campo-entrada">
+        </div>
+
+        <button type="submit" class="btn btn-primario">Filtrar</button>
+        <button type="button" id="btn-limpar-filtros" class="btn btn-secundario">Limpar</button>
+      </form>
+
+      <div id="tabela-historico-container"></div>
+      <div id="paginacao-historico"></div>
+    </main>
+  </div>
+
+  <script type="module" src="../js/paginas/admin-historico.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Torino Online — Cardápio</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/cliente.css">
+</head>
+<body>
+  <a href="#conteudo-principal" class="pular-conteudo">Ir para o cardápio</a>
+  <header id="topo-site"></header>
+
+  <main id="conteudo-principal">
+    <!-- Hero escuro com entrada orquestrada única -->
+    <section class="hero-torino" aria-labelledby="titulo-hero">
+      <div class="container hero-grade">
+        <div>
+          <h1 id="titulo-hero" class="hero-titulo">Hambúrguer na chapa, do jeito Torino.</h1>
+          <p class="hero-subtitulo">Escolha, peça e acompanhe em minutos.</p>
+          <div class="hero-acoes">
+            <a href="#secao-cardapio" class="btn btn-primario">Ver cardápio</a>
+            <a href="meus-pedidos.html" class="btn btn-secundario" style="border-color: var(--mostarda); color: var(--mostarda);">Acompanhar pedido</a>
+          </div>
+        </div>
+        <div class="hero-midia">
+          <img src="assets/img/hero-burger.svg" alt="Hambúrguer duplo Torino na chapa quente com queijo derretido" width="560" height="420">
+        </div>
+      </div>
+    </section>
+
+    <!-- Busca grande (UC02) -->
+    <section class="busca-faixa" id="secao-cardapio" aria-label="Buscar no cardápio">
+      <div class="container">
+        <form id="form-busca" class="busca-form" novalidate role="search">
+          <div class="busca-campo-wrap">
+            <label for="campo-busca" class="sr-only">Buscar produto no cardápio</label>
+            <svg class="icone" aria-hidden="true"><use href="assets/icons/sprite.svg#icone-busca"></use></svg>
+            <input
+              type="search"
+              id="campo-busca"
+              name="busca"
+              class="campo-entrada busca-input"
+              placeholder="Buscar hambúrguer, batata, bebida ou ingrediente..."
+              autocomplete="off"
+            >
+          </div>
+          <button type="submit" class="btn btn-primario">Pesquisar</button>
+          <button type="button" id="btn-limpar-busca" class="btn btn-secundario oculto">Limpar</button>
+        </form>
+        <div id="alerta-busca" style="margin-top: 12px;"></div>
+      </div>
+    </section>
+
+    <!-- Chips de categoria fixos ao rolar -->
+    <div class="chips-faixa" aria-label="Categorias do cardápio">
+      <div class="container">
+        <div id="chips-categorias" class="chips-lista" role="group" aria-label="Filtrar por categoria"></div>
+      </div>
+    </div>
+
+    <!-- Lista de produtos -->
+    <section class="secao" aria-labelledby="titulo-cardapio">
+      <div class="container">
+        <div class="secao-cabecalho">
+          <h2 id="titulo-cardapio">Cardápio do dia</h2>
+          <p id="status-cardapio" class="texto-secundario texto-pequeno" role="status" aria-live="polite"></p>
+        </div>
+        <div id="lista-cardapio"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="rodape-site"></footer>
+  <script type="module" src="js/paginas/cardapio.js"></script>
+</body>
+</html>

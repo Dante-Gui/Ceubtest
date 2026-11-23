@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Endereços de entrega — Torino Online</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/cliente.css">
+</head>
+<body>
+  <a href="#conteudo-principal" class="pular-conteudo">Ir para os endereços</a>
+  <header id="topo-site"></header>
+
+  <main id="conteudo-principal" class="secao">
+    <div class="container">
+      <a id="link-voltar" href="checkout.html" class="voltar-link">
+        <svg class="icone icone-sm" aria-hidden="true"><use href="assets/icons/sprite.svg#icone-seta-voltar"></use></svg>
+        <span>Voltar para a finalização</span>
+      </a>
+
+      <div class="secao-cabecalho">
+        <h1>Endereços de entrega</h1>
+      </div>
+
+      <div class="fluxo-grade">
+        <section class="cartao-superficie" aria-labelledby="titulo-enderecos-salvos">
+          <h2 id="titulo-enderecos-salvos" style="font-size: var(--t1);">Endereços salvos</h2>
+          <div id="lista-enderecos" class="lista-opcoes"></div>
+          <div id="acao-continuar" class="oculto">
+            <a href="checkout.html" class="btn btn-primario btn-bloco">Continuar para finalização</a>
+          </div>
+        </section>
+
+        <section class="cartao-superficie" aria-labelledby="titulo-novo-endereco">
+          <h2 id="titulo-novo-endereco" style="font-size: var(--t1);">Cadastrar novo endereço</h2>
+          <div id="resumo-endereco"></div>
+
+          <form id="form-endereco" novalidate style="display: flex; flex-direction: column; gap: 16px;">
+            <div class="campo">
+              <label for="apelido" class="campo-rotulo">Apelido <span class="campo-opcional">(ex.: Casa, Trabalho)</span></label>
+              <input type="text" id="apelido" name="apelido" class="campo-entrada" placeholder="Casa" required>
+            </div>
+
+            <div class="campo-linha campo-linha-cep">
+              <div class="campo">
+                <label for="cep" class="campo-rotulo">CEP</label>
+                <input type="text" id="cep" name="cep" class="campo-entrada" inputmode="numeric" placeholder="01310-100" required>
+              </div>
+              <button type="button" id="btn-buscar-cep" class="btn btn-secundario">Buscar CEP</button>
+            </div>
+
+            <div class="campo-linha campo-linha-numero">
+              <div class="campo">
+                <label for="logradouro" class="campo-rotulo">Rua / Avenida</label>
+                <input type="text" id="logradouro" name="logradouro" class="campo-entrada" required>
+              </div>
+              <div class="campo">
+                <label for="numero" class="campo-rotulo">Número</label>
+                <input type="text" id="numero" name="numero" class="campo-entrada" required>
+              </div>
+            </div>
+
+            <div class="campo-linha campo-linha-2">
+              <div class="campo">
+                <label for="complemento" class="campo-rotulo">Complemento <span class="campo-opcional">(opcional)</span></label>
+                <input type="text" id="complemento" name="complemento" class="campo-entrada" placeholder="Apto, bloco">
+              </div>
+              <div class="campo">
+                <label for="bairro" class="campo-rotulo">Bairro</label>
+                <input type="text" id="bairro" name="bairro" class="campo-entrada" required>
+              </div>
+            </div>
+
+            <div class="campo-linha campo-linha-numero">
+              <div class="campo">
+                <label for="cidade" class="campo-rotulo">Cidade</label>
+                <input type="text" id="cidade" name="cidade" class="campo-entrada" required>
+              </div>
+              <div class="campo">
+                <label for="uf" class="campo-rotulo">UF</label>
+                <input type="text" id="uf" name="uf" class="campo-entrada" maxlength="2" placeholder="SP" required>
+              </div>
+            </div>
+
+            <div class="campo">
+              <label for="referencia" class="campo-rotulo">Ponto de referência <span class="campo-opcional">(opcional)</span></label>
+              <input type="text" id="referencia" name="referencia" class="campo-entrada" placeholder="Portão escuro, próximo à praça">
+            </div>
+
+            <button type="submit" class="btn btn-primario btn-bloco" data-texto-carregando="Salvando...">Salvar endereço</button>
+          </form>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer id="rodape-site"></footer>
+  <script type="module" src="js/paginas/enderecos.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+.alerta {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--e2);
+  padding: 12px 16px;
+  border-radius: var(--raio-campo);
+  border: 1.5px solid var(--borda);
+  font-size: var(--t-1);
+  font-weight: 500;
+}
+
+.alerta-sucesso {
+  background: var(--fundo-sucesso);
+  border-color: color-mix(in srgb, var(--sucesso) 35%, transparent);
+  color: var(--sucesso);
+}
+
+.alerta-erro {
+  background: var(--fundo-erro);
+  border-color: color-mix(in srgb, var(--erro) 38%, transparent);
+  color: var(--erro);
+}
+
+.alerta-aviso {
+  background: var(--fundo-aviso);
+  border-color: color-mix(in srgb, var(--aviso) 38%, transparent);
+  color: var(--aviso);
+}
+
+.alerta-info {
+  background: var(--fundo-info);
+  border-color: var(--borda-forte);
+  color: var(--carvao);
+}
+
+.alerta-conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.toast-pilha {
+  position: fixed;
+  right: var(--e3);
+  bottom: calc(var(--e3) + 68px);
+  z-index: 900;
+  display: flex;
+  flex-direction: column;
+  gap: var(--e2);
+  max-width: min(380px, calc(100vw - 32px));
+}
+
+@media (min-width: 768px) {
+  .toast-pilha {
+    bottom: var(--e4);
+    right: var(--e4);
+  }
+}
+
+.toast {
+  display: flex;
+  align-items: center;
+  gap: var(--e2);
+  padding: 12px 16px;
+  border-radius: var(--raio-campo);
+  background: var(--carvao);
+  color: var(--papel);
+  box-shadow: var(--sombra-flutuante);
+  font-size: var(--t-1);
+  font-weight: 500;
+  border-left: 4px solid var(--mostarda);
+}
+
+.toast-sucesso {
+  border-left-color: var(--sucesso);
+}
+
+.toast-erro {
+  border-left-color: var(--erro);
+}
+
+.toast-aviso {
+  border-left-color: var(--mostarda);
+}
+
+.toast-acao {
+  margin-left: auto;
+  background: transparent;
+  border: 1px solid color-mix(in srgb, var(--papel) 35%, transparent);
+  color: var(--mostarda);
+  border-radius: var(--raio-botao);
+  padding: 6px 12px;
+  min-height: 36px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.toast-fechar {
+  background: transparent;
+  border: 0;
+  color: var(--papel);
+  cursor: pointer;
+  padding: 4px;
+  display: inline-flex;
+}

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Ilustração de Refrigerante lata gelado">
+  <rect width="400" height="300" fill="#E6E1DA"/>
+  <ellipse cx="200" cy="252" rx="70" ry="14" fill="#1F1A17" opacity="0.16"/>
+  <!-- Lata -->
+  <rect x="148" y="62" width="104" height="180" rx="14" fill="#B4361B"/>
+  <path d="M156 62h88l-6-12h-76l-6 12z" fill="#D4CFC9"/>
+  <ellipse cx="200" cy="50" rx="38" ry="6" fill="#FFFFFF"/>
+  <path d="M148 118c34-16 70 16 104 0v54c-34 16-70-16-104 0v-54z" fill="#1F1A17"/>
+  <text x="200" y="152" text-anchor="middle" fill="#F4B223" font-family="Figtree, system-ui, sans-serif" font-size="16" font-weight="800">350 ml</text>
+  <!-- Gotinhas de gelado -->
+  <g fill="#FFFFFF" opacity="0.75">
+    <circle cx="168" cy="92" r="4"/>
+    <circle cx="228" cy="100" r="3"/>
+    <circle cx="232" cy="196" r="4.5"/>
+    <circle cx="172" cy="210" r="3.5"/>
+  </g>
+</svg>

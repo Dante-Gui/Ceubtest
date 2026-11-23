@@ -1,0 +1,98 @@
+.linha-tempo {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--e3);
+  margin-top: var(--e4);
+}
+
+@media (min-width: 768px) {
+  .linha-tempo {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--e2);
+  }
+}
+
+.etapa-carimbo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--e3);
+  padding: 12px 14px;
+  border-radius: var(--raio-campo);
+  border: 2px dashed var(--borda-forte);
+  background: var(--fumaca);
+  color: var(--pimenta);
+  opacity: 0.6;
+  transition: opacity var(--mov-medio) var(--curva),
+    border-color var(--mov-medio) var(--curva),
+    background-color var(--mov-medio) var(--curva);
+}
+
+@media (min-width: 768px) {
+  .etapa-carimbo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--e2);
+  }
+}
+
+.etapa-carimbo.concluida {
+  opacity: 1;
+  border-style: solid;
+  border-color: var(--sucesso);
+  background: var(--fundo-sucesso);
+  color: var(--carvao);
+}
+
+.etapa-carimbo.atual {
+  opacity: 1;
+  border-style: solid;
+  border-color: var(--brasa);
+  background: color-mix(in srgb, var(--mostarda) 26%, var(--papel));
+  color: var(--carvao);
+}
+
+.etapa-carimbo.cancelada {
+  opacity: 1;
+  border-style: solid;
+  border-color: var(--erro);
+  background: var(--fundo-erro);
+  color: var(--erro);
+}
+
+.etapa-marca {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: var(--t-1);
+  border: 2px solid currentColor;
+  flex-shrink: 0;
+}
+
+.etapa-carimbo.concluida .etapa-marca {
+  background: var(--sucesso);
+  border-color: var(--sucesso);
+  color: var(--papel);
+}
+
+.etapa-carimbo.atual .etapa-marca {
+  background: var(--brasa);
+  border-color: var(--brasa);
+  color: var(--papel);
+}
+
+.etapa-nome {
+  font-weight: 700;
+  font-size: var(--t-1);
+}
+
+.etapa-hora {
+  font-size: var(--t-1);
+  color: var(--pimenta);
+  font-variant-numeric: tabular-nums;
+}

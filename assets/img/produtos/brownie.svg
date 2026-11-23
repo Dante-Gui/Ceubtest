@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Ilustração de Brownie quente com calda">
+  <rect width="400" height="300" fill="#EFE7DF"/>
+  <ellipse cx="200" cy="238" rx="124" ry="20" fill="#1F1A17" opacity="0.14"/>
+  <!-- Pratinho -->
+  <ellipse cx="200" cy="224" rx="124" ry="24" fill="#FFFFFF" stroke="#D7D0C8" stroke-width="2"/>
+  <!-- Brownie -->
+  <polygon points="118,162 210,126 286,162 194,198" fill="#593322"/>
+  <polygon points="118,162 194,198 194,228 118,192" fill="#3E2216"/>
+  <polygon points="194,198 286,162 286,192 194,228" fill="#4A291B"/>
+  <!-- Calda caramelo salgado -->
+  <path d="M146 154c24-12 52-16 84-4 18 8 24 22 10 28-14 6-26-4-34 8-8 12-20 10-26-2-6-12-24-4-34-12-10-8-10-12 0-18z" fill="#D98A32"/>
+  <!-- Nozes -->
+  <circle cx="188" cy="160" r="5" fill="#F4B223"/>
+  <circle cx="218" cy="156" r="4.5" fill="#F4B223"/>
+  <circle cx="204" cy="172" r="4" fill="#F4B223"/>
+</svg>

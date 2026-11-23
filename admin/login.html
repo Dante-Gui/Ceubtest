@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acesso administrativo — Torino Online</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body class="admin-login-pagina">
+  <main class="admin-login-caixa" aria-labelledby="titulo-admin-login">
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <span style="width: 36px; height: 36px; border-radius: 10px; background: var(--brasa); color: var(--papel); display: inline-flex; align-items: center; justify-content: center;">
+        <svg class="icone" aria-hidden="true"><use href="../assets/icons/sprite.svg#icone-chama"></use></svg>
+      </span>
+      <div>
+        <h1 id="titulo-admin-login" style="font-size: var(--t2);">Painel Torino</h1>
+        <p class="texto-pequeno texto-secundario">Acesso restrito à administração</p>
+      </div>
+    </div>
+
+    <div id="resumo-admin-login"></div>
+
+    <form id="form-admin-login" novalidate style="display: flex; flex-direction: column; gap: 16px;">
+      <div class="campo">
+        <label for="email" class="campo-rotulo">E-mail administrativo</label>
+        <input type="email" id="email" name="email" class="campo-entrada" autocomplete="username" placeholder="admin@torino.com" required>
+      </div>
+
+      <div class="campo">
+        <label for="senha" class="campo-rotulo">Senha</label>
+        <input type="password" id="senha" name="senha" class="campo-entrada" autocomplete="current-password" required>
+      </div>
+
+      <button type="submit" class="btn btn-primario btn-bloco" data-texto-carregando="Validando...">Entrar no painel</button>
+    </form>
+
+    <div class="alerta alerta-info">
+      <div class="alerta-conteudo">
+        <strong>Acesso de demonstração (fase 1)</strong>
+        <span>E-mail: <code>admin@torino.com</code> · Senha: <code>Admin@123</code></span>
+      </div>
+    </div>
+
+    <a href="../index.html" class="texto-pequeno" style="text-align: center;">Voltar para a loja do cliente</a>
+  </main>
+
+  <script type="module" src="../js/paginas/admin-login.js"></script>
+</body>
+</html>

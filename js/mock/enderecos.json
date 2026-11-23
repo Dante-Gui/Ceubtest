@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "clienteId": 1,
+    "apelido": "Casa",
+    "cep": "01310-100",
+    "logradouro": "Av. Paulista",
+    "numero": "1420",
+    "complemento": "Apto 42",
+    "bairro": "Bela Vista",
+    "cidade": "São Paulo",
+    "uf": "SP",
+    "referencia": "Portaria de vidro ao lado da padaria",
+    "padrao": true
+  },
+  {
+    "id": 2,
+    "clienteId": 1,
+    "apelido": "Trabalho",
+    "cep": "04543-011",
+    "logradouro": "Av. Presidente Juscelino Kubitschek",
+    "numero": "510",
+    "complemento": "8º andar",
+    "bairro": "Vila Nova Conceição",
+    "cidade": "São Paulo",
+    "uf": "SP",
+    "referencia": "Deixar na recepção",
+    "padrao": false
+  }
+]

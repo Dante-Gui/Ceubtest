@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhes do pedido — Torino Admin</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+  <a href="#conteudo-principal" class="pular-conteudo">Ir para os detalhes do pedido</a>
+  <div class="admin-shell">
+    <header id="admin-barra-mobile"></header>
+    <aside id="admin-sidebar"></aside>
+
+    <main id="conteudo-principal" class="admin-conteudo">
+      <a href="pedidos.html" class="voltar-link">
+        <svg class="icone icone-sm" aria-hidden="true"><use href="../assets/icons/sprite.svg#icone-seta-voltar"></use></svg>
+        <span>Voltar para pedidos</span>
+      </a>
+
+      <div class="admin-cabecalho">
+        <h1 id="titulo-pedido-admin">Detalhes do pedido</h1>
+      </div>
+
+      <p id="status-pedido-admin" class="sr-only" role="status" aria-live="polite"></p>
+      <div id="alerta-pedido-admin" style="margin-bottom: 16px;"></div>
+      <div id="detalhe-pedido-admin"></div>
+    </main>
+  </div>
+
+  <script type="module" src="../js/paginas/admin-pedido.js"></script>
+</body>
+</html>

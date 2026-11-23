@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Ilustração da Batata rústica com páprica e alecrim">
+  <rect width="400" height="300" fill="#F2E8D8"/>
+  <ellipse cx="200" cy="248" rx="110" ry="16" fill="#1F1A17" opacity="0.14"/>
+  <!-- Batatas rústicas -->
+  <g stroke="#9A6200" stroke-width="3">
+    <rect x="130" y="70" width="24" height="110" rx="8" transform="rotate(-14 142 125)" fill="#F4B223"/>
+    <rect x="160" y="54" width="24" height="120" rx="8" transform="rotate(-6 172 114)" fill="#E39D1A"/>
+    <rect x="192" y="48" width="24" height="126" rx="8" transform="rotate(4 204 111)" fill="#F4B223"/>
+    <rect x="224" y="58" width="24" height="120" rx="8" transform="rotate(12 236 118)" fill="#E39D1A"/>
+    <rect x="248" y="76" width="24" height="106" rx="8" transform="rotate(20 260 129)" fill="#F4B223"/>
+  </g>
+  <!-- Salpicos de páprica e alecrim -->
+  <circle cx="150" cy="98" r="3" fill="#B4361B"/>
+  <circle cx="198" cy="84" r="3" fill="#B4361B"/>
+  <circle cx="232" cy="96" r="3" fill="#B4361B"/>
+  <path d="M174 88l8-6M214 78l8 5M244 108l-7-6" stroke="#2E7D4F" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Caixa de papel kraft/brasa -->
+  <path d="M118 144h164l-18 100H136l-18-100z" fill="#B4361B"/>
+  <path d="M118 144c32 16 132 16 164 0l-6 28c-32 14-120 14-152 0l-6-28z" fill="#8E2812"/>
+  <rect x="158" y="188" width="84" height="22" rx="11" fill="#F4B223"/>
+  <text x="200" y="203" text-anchor="middle" fill="#1F1A17" font-family="Figtree, system-ui, sans-serif" font-size="11" font-weight="700">TORINO</text>
+  <!-- Potinho de maionese -->
+  <path d="M286 210h54l-6 34h-42l-6-34z" fill="#1F1A17"/>
+  <ellipse cx="313" cy="210" rx="27" ry="8" fill="#FFFFFF"/>
+</svg>
